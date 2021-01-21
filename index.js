@@ -15,17 +15,22 @@ function rulesToPlayQuiz(){
 
 //to display name/logo of the application
 function displayQuizAppLogo(nameOfTheApplication="QuizApp"){
+
   console.log(
   chalk.yellow(
     figlet.textSync(nameOfTheApplication, { horizontalLayout: 'full' })
   )
 );
+
 }
 
 //returns text to ask users to play or not
 function askToPlayString(additonalText=""){
+
+  additonalText+=" ";
   let askToPlayText=`\nWould you like to play ${additonalText}quiz (y/n)?\n`;
   return askToPlayText;
+
 }
 
 displayQuizAppLogo();
@@ -48,7 +53,7 @@ while(1){
   }
   console.clear();
   console.log("Congratulations! You have scored "+quizStarter.usersScore());
-  wantToPlay = readLineSync.question(chalk.green(askToPlayString("again ")));
+  wantToPlay = readLineSync.question(chalk.green(askToPlayString("again")));
   console.clear();
 }
 
