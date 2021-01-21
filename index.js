@@ -5,7 +5,7 @@ const quizStarter = require('./QuizStarter');
 
 //to display rules to the user
 function rulesToPlayQuiz(){
-  let rulesToBeDisplayed=`
+  let rulesToBeDisplayed=`Read the information below before proceeding:
   1. The Quiz will contain 5 Questions with 4 options.
   2. User has to select an option a/b/c/d or A/B/C/D.
   3. Selection of any other option than stated in point 2 will be considered wrong.
