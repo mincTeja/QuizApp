@@ -28,7 +28,7 @@ function displayQuizAppLogo(nameOfTheApplication="QuizApp"){
 function askToPlayString(additonalText=""){
 
   additonalText+=" ";
-  let askToPlayText=`\nWould you like to play ${additonalText}quiz (y/n)?\n`;
+  let askToPlayText=`\nWould you like to play quiz ${additonalText}(y/n)?\n`;
   return askToPlayText;
 
 }
